@@ -1,0 +1,36 @@
+## -------- Messages -------- 
+cooldown-message: '&cYou must wait &6%timeleft% &cseconds before eating another apple!'
+cooldown-begin-message: '&cYou have eaten &6%totalamt% &capples in &6%interval% &cseconds you must wait before eating!'
+
+
+##Settings
+##This setting will enable only Gapple-cooldown-seconds to work for both god apples
+##If false the two gapples will be tracked by themself.
+overlap-applecount: true
+
+##Overlap = true settings
+total-cooldown-seconds: 45
+##How many a user can eat in x amount of seconds before they get a total-cooldown from eating either apple
+total-trigger-amt: 3
+total-interval-seconds: 13
+
+##Overlap = false settings
+gapple-cooldown-seconds: 30
+enchanted-gapple-cooldown-seconds: 60
+
+##How many apples does the user have to eat to get CD
+gapple-trigger-amt: 1
+## How long does the user have to wait between eating gapple-tigger-amt
+## Before he doesn't get a CD? 
+## Example: if John eats 2 apples in 10 seconds then they get 'gapple-cooldown-seconds' 
+## But if John eats 2 apples in 11 seconds then he doesn't get 'gapple-cooldown-seconds' cooldown.
+## ----- How long does user have between eating trigger-amt to get detected (How FAST can they eat apples without CD)
+## If 'gapple-trigger-amt' is 0 this setting is ignored.
+gapple-interval-seconds: 10 
+## If this setting was at 10 seconds and the trigger was at 2
+## It would mean that if the user doesn't try to eat 3 apples in 10 seconds they won't get a CD.
+## But if they tried to eat a third apple in the 10 seconds they ate the last one then they would get a CD.
+
+## Same information as above, just for enchanted Golden Apples!
+enchanted-gapple-tigger-amt: 2
+enchanted-gapple-interval-seconds: 10
