@@ -1,0 +1,6 @@
+main: me.kozs.mc.gapple.Apple
+name: GAppleCD
+version: 1.0.0
+author: Kozs
+description: Cooldown plugin for eating Golden Apples
+commands:
